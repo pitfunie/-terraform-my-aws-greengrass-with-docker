@@ -158,3 +158,17 @@ You may use `docker start` or `docker-compose start` to restart a stopped contai
 ### Removing the Docker Container
 
 If you have not specified the `--rm` flag in your `docker run` command, your container will remain in the STOPPED state on your host. Use `docker rm` or `docker-compose down` to remove your container.
+
+Error: Cannot perform an interactive login from a non TTY device
+2.18.5
+======
+
+* api-change:``elbv2``: Add zonal_shift.config.enabled attribute. Add new AdministrativeOverride construct in the describe-target-health API response to include information about the override status applied to a target.
+* api-change:``robomaker``: Documentation update: added support notices to each API action.
+* api-change:``emr``: This release provides new parameter "Context" in instance fleet clusters.
+* api-change:``appflow``: Doc only updates for clarification around OAuth2GrantType for Salesforce.
+* api-change:``guardduty``: Added a new field for network connection details.
+
+Error: A firewall is blocking file Sharing between windows and the containers.
+
+You might receive this error or a Firewall Detected message when running Docker on a Windows computer. This can also occur if you are signed in on a virtual private network (VPN) and your network settings are preventing the shared drive from being mounted. In that situation, turn off VPN and re-run the Docker container.
